@@ -1,7 +1,7 @@
 # my_project
-#前端
+# 前端
 
-#後端
+# 後端
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
@@ -69,7 +69,7 @@ def score():
     rank = driver.find_element(By.XPATH, '/html/body/table/caption/p').text
     return(rank)
 
-###有bug
+# 有bug
 def course():
     driver.execute_script(f"window.open('{url_course}', '_blank');")
     time.sleep(0.5)
