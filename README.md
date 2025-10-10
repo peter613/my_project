@@ -1,6 +1,46 @@
 # my_project
 # 前端
-#fojdsofjpo
+
+
+import tkinter as tk
+
+# 建立主視窗
+root = tk.Tk()
+root.title("選課系統")
+root.geometry("600x400")
+root.minsize(width=600,height=400) 
+
+# 學號與密碼
+tk.Label(root, text="學號 ").grid(row=0, column=0, padx=10, pady=5, sticky="e")
+entry_id = tk.Entry(root)
+entry_id.grid(row=0, column=1, padx=10, pady=5)
+
+tk.Label(root, text="密碼 ").grid(row=1, column=0, padx=10, pady=5, sticky="e")
+entry_pwd = tk.Entry(root, show="*")
+entry_pwd.grid(row=1, column=1, padx=10, pady=5)
+
+# 選課區
+tk.Label(root, text="選課").grid(row=2, column=0, padx=10, pady=10)
+tk.Button(root, text="加選").grid(row=2, column=1, padx=5)
+tk.Button(root, text="退選").grid(row=2, column=2, padx=5)
+
+# 課程人數查詢
+tk.Label(root, text="課程人數 (剩餘)").grid(row=3, column=0, padx=10)
+tk.Button(root, text="體育/通識").grid(row=3, column=1, padx=5)
+tk.Button(root, text="專業課程").grid(row=3, column=2, padx=5)
+
+# 課表 / 成績
+tk.Label(root, text="課表 / 成績").grid(row=4, column=0, padx=10, pady=20)
+tk.Button(root, text="功課表").grid(row=4, column=1, padx=5)
+tk.Button(root, text="學期成績").grid(row=4, column=2, padx=5)
+
+# 畢業門檻
+tk.Label(root, text="畢業門檻").grid(row=5, column=0, padx=10)
+tk.Button(root, text="畢業學分進度").grid(row=5, column=1, padx=5)
+
+# 啟動主迴圈
+root.mainloop()
+
 
 # 後端
 from selenium import webdriver
