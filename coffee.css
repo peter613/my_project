@@ -1,0 +1,236 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 標楷體;
+}
+
+body {
+    background: #E8E8D0;
+}
+
+.title {
+    background-color: #808040;
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    z-index: 100;
+}
+
+.title header h1 {
+    color:#E8E8D0;
+    padding: 0 20px;
+    margin: 15px 0;
+}
+
+.title ul {
+    padding: 0;
+    margin: 0 20px 0 0;
+    list-style: none; /* 移除預設點點 */
+}
+
+li {
+    background-color:#E8E8D0 ;
+    padding: 10px 15px;
+    border-style: solid ;
+    border-color:#808040;
+    border-width: 1px;
+    display: inline-block;
+    white-space: nowrap;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+li a{
+    color:black;
+    text-decoration: none;
+}
+
+li:hover{
+    background-color: #B9B973;
+}
+
+.first {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; 
+    background-image: url(coffee.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px; 
+}
+
+.first h1{
+    font-family: 標楷體;
+    color: white;
+    position: absolute; top:55%; right:30%;
+}
+
+.first h2{
+    font-family: 標楷體;
+    background-color: #9F5000;
+    border-style:dashed ;
+    padding: 10px;
+    border-radius: 20px;
+    position: absolute; top:65%; right:45%;
+}
+
+.first a{
+    color: white;
+}
+
+.popular h1{
+    text-align: center;
+    padding: 50px 10px 10px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content div{
+    background-color: #808040;
+    background-size: 60px;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.introduction, .address{
+    overflow: hidden;
+    padding: 20px;
+    margin: 0,auto;
+}
+
+.picture img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.picture,.text,.phone,.googlemap{
+    float: left;
+    box-sizing: border-box;
+}
+
+.picture{
+    width: 45%;
+    padding: 2.5;
+}
+
+.text{
+    width: 45%;
+    padding: 2.5%;
+}
+
+.phone{
+    width: 40%; 
+    padding: 20px; 
+    margin: 2.5%;
+}
+
+.phone a{
+    background-color: #808040;
+    border-style: solid;
+    border-radius: 20px;
+    color:white;
+    padding: 10px;
+}
+
+.googlemap{
+    width: 50%;
+    margin: 2.5%;
+}
+
+.googlemap iframe{
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+#news{
+    margin: 5%;
+}
+
+.new{
+    padding: 1%;
+    margin: 10px;
+    background-color: 	#FFFFF4;
+    border-radius: 20px;
+}
+
+.foot{
+    clear: both; /*把上面float帶來的效果刪除*/
+    background-color: #808040;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+@media screen and (max-width:480px) {
+    .title {
+        flex-direction: column; 
+        position: static; 
+    }
+    
+    .title ul {
+        margin: 10px 0;
+        text-align: center; 
+        width: 100%;
+    }
+    
+    li {
+        display: inline-block; 
+        margin: 5px;
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .first {
+        margin-top: 0; 
+        height: auto;
+        min-height: 60vh;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .first h1, .first h2 {
+        position: static; 
+        margin: 20px auto;
+        width: 90%;
+    }
+
+
+    .content {
+        flex-direction: column;
+    }
+    
+    .content div {
+        width: 90%; 
+        margin: 10px auto;
+    }
+
+    .picture, .text, .phone, .googlemap {
+        float: none; 
+        width: 100%; 
+        margin: 0;
+        padding: 20px;
+    }
+
+    .googlemap iframe {
+        padding: 0; 
+        height: 250px;
+    }
+}

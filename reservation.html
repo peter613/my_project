@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>訂位</title>
+    <style>
+        body{background-image: url(reservation.png);font-family: 標楷體;text-align: center;min-height: 100vh;display: flex; flex-direction: column;margin: 0;}
+        main{background-color: #E8E8D0; border-radius: 20px; width: 90%; max-width: 600px; display:block; margin: auto; padding: 10px;}
+        label{color: #5B4B00; font-size: x-large;}
+        input,select,textarea{padding: 10px;width: 80%;border-radius: 20px;}
+        button{margin: 5px; width: 50%; padding: 5px; background-color: #808040; color: white;border-radius: 20px;font-size: larger;}
+    </style>
+</head>
+<body>
+    <main>
+        <h1>☕訂位預約</h1>
+        <form method="post">
+            <div>
+                <br><label for="username">姓名:</label><br>
+                <input type="text" id="username">
+            </div>
+            <div>
+                <br><label>電話:</label><br>
+                <input type="tel" id="usertel"
+                pattern="09[0-9]{8}"
+                placeholder="如:0912345678" 
+                title="如:0912345678">
+            </div>
+            <div>
+                <br><label id="usernum">人數:</label><br>
+                <select id="usernum">
+                    <option value="一位">一位</option>
+                    <option value="二位">二位</option>
+                    <option value="三位">三位</option>
+                    <option value="四位">四位</option>
+                    <option value="五位">五位</option>
+                    <option value="六位">六位</option>
+                    <option value="七位">七位</option>
+                    <option value="八位">八位</option>
+                </select>
+            </div>
+            <div>
+                <br><label id="userdate">日期:</label><br>
+                <input type="datetime-local" id="userdate">
+            </div>
+            <div>
+                <br><label id="note">備註:</label><br>
+                <textarea id="note" rows="3"></textarea>
+            </div>
+            <div>
+                <br><button type="submit" class="submit-btn">確認訂位</button>
+            </div>
+        </form>
+    </main>
+    <footer style="background-color: #616130; color: white; margin-top: auto; padding: 10px;">© 角落咖啡廳 · Corner of City Café</footer>
+</body>
+</html>

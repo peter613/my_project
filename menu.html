@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菜單/熱量表</title>
+    <style>
+        body{background-image: url(reservation.png); background-color: #E8E8D0; font-family: 標楷體; text-align: center;}
+        main{max-width: 800px; margin: 0 auto;}
+        section{margin: 2%; box-shadow: 10px 10px 5px silver; border-radius: 20px;}
+        h1{background-color: #808040; color: #E8E8D0; margin: 0; padding: 2%;}
+        h2{background-color: #A5A552; color: #FFFFF4; margin: 0; padding: 2%;position: sticky;top: 0px;border-top-left-radius: 20px; border-top-right-radius: 20px;}
+        p{background-color: white; margin: 0; padding:1% ;}
+        table{margin: 0 auto; width: 100%; border-collapse: collapse;}
+        td{padding: 3%;}
+        th{padding: 1%;}
+        .menu-title{background-color: #616130; color: white;}
+        .odd{background-color: #DEDEBE;}
+        .even{background-color: #E8E8D0;}
+        @media screen and (max-width:480px) {
+            span{display: block;}
+        }
+    </style>
+</head>
+<body>
+    <h1>角落咖啡廳:<span>價格/營養一目了然</span></h1>
+    <main>
+        <section>
+            <h2>職人咖啡系列</h2>
+            <p>精選阿拉比卡豆，深焙與中淺焙的完美交響。</p>
+            <table>
+                <tr class="menu-title">
+                    <th scope="col">品項名稱 (Item)</th>
+                    <th scope="col">價格 (NTD)</th>
+                    <th scope="col">熱量 (kcal)</th>
+                    <th scope="col">糖 (g)</th>
+                    <th scope="col">蛋白質 (g)</th>
+                    <th scope="col">脂肪 (g)</th>
+                </tr>
+                <tr class="odd">
+                    <th scope="row">經典美式<span>(Classic Americano)</span></th>
+                    <td>$100</td>
+                    <td>15</td>
+                    <td>0</td>
+                    <td>0.5</td>
+                    <td>0</td>
+                </tr>
+                <tr class="even">
+                    <th scope="row">原味拿鐵<span>(Caffè Latte)</span></th>
+                    <td>$130</td>
+                    <td>180</td>
+                    <td>11</td>
+                    <td>9</td>
+                    <td>9</td>
+                </tr>
+                <tr class="odd">
+                    <th scope="row">蜜香拿鐵<span>(Honey Scented Latte)</span></th>
+                    <td>$150</td>
+                    <td>230</td>
+                    <td>22</td>
+                    <td>9</td>
+                    <td>9</td>
+                </tr>
+                <tr class="even">
+                    <th scope="row">海鹽焦糖瑪奇朵<span>(Sea Salt Macchiato)</span></th>
+                    <td>$160</td>
+                    <td>250</td>
+                    <td>28</td>
+                    <td>8</td>
+                    <td>10</td>
+                </tr>
+                <tr class="odd">
+                    <th scope="row">燕麥奶拿鐵<span>(Oat Milk Latte)</span></th>
+                    <td>$160</td>
+                    <td>210</td>
+                    <td>14</td>
+                    <td>4</td>
+                    <td>8</td>
+                </tr>
+                <tr class="even">
+                    <th scope="row">西西里檸檬氣泡咖<span>(Espresso Romano)</span></th>
+                    <td>$140</td>
+                    <td>120</td>
+                    <td>18</td>
+                    <td>0.5</td>
+                    <td>0</td>
+                </tr>
+                <tr class="odd">
+                    <th scope="row">冷萃咖啡<span>(Cold Brew)</span></th>
+                    <td>$120</td>
+                    <td>10</td>
+                    <td>0</td>
+                    <td>0.5</td>
+                    <td>0</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>舒心無咖啡因系列 (Non-Caffeinated Series)</h2>
+            <p>適合午後放鬆或不攝取咖啡因的顧客。</p>
+            <table>
+                <tr class="menu-title">
+                    <th scope="col">品項名稱 (Item)</th>
+                    <th scope="col">價格 (NTD)</th>
+                    <th scope="col">熱量 (kcal)</th>
+                    <th scope="col">糖 (g)</th>
+                    <th scope="col">蛋白質 (g)</th>
+                    <th scope="col">脂肪 (g)</th>
+                </tr>
+                <tr class="odd">
+                    <th scope="row">靜岡抹茶牛奶<span>(Matcha Latte)</span></th>
+                    <td>$150</td>
+                    <td>240</td>
+                    <td>25</td>
+                    <td>10</td>
+                    <td>9</td>
+                </tr>
+                <tr class="even">
+                    <th scope="row">法芙娜可可歐蕾<span>(Valrhona Cocoa)</span></th>
+                    <td>$150</td>
+                    <td>320</td>
+                    <td>32</td>
+                    <td>11</td>
+                    <td>14</td>
+                </tr>
+                <tr class="odd">
+                    <th scope="row">黑糖珍珠鮮奶<span>(Brown Sugar Milk)</span></th>
+                    <td>$140</td>
+                    <td>350</td>
+                    <td>45</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+                <tr class="even">
+                    <th scope="row">南非國寶鮮奶茶<span>(Rooibos Milk Tea)</span></th>
+                    <td>$130</td>
+                    <td>160</td>
+                    <td>12</td>
+                    <td>8</td>
+                    <td>8</td>
+                </tr>
+                <tr class="odd">
+                    <th scope="row">蜂蜜洋甘菊茶<span>(Honey Chamomile Tea)</span></th>
+                    <td>$120</td>
+                    <td>45</td>
+                    <td>10</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr class="even">
+                    <th scope="row">熱帶水果茶<span>(Tropical Fruit Tea)</span></th>
+                    <td>$140</td>
+                    <td>180</td>
+                    <td>38</td>
+                    <td>0.5</td>
+                    <td>0</td>
+                </tr>
+                <tr class="odd">
+                    <th scope="row">草莓芝士奶蓋冰沙<span>(Strawberry Frappe)</span></th>
+                    <td>$160</td>
+                    <td>420</td>
+                    <td>55</td>
+                    <td>6</td>
+                    <td>18</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>手作甜點系列 (Handmade Desserts)</h2>
+            <p>每日限量供應，搭配飲品的最佳夥伴。</p>
+            <table>
+                <tr class="menu-title">
+                    <th scope="col">品項名稱 (Item)</th>
+                    <th scope="col">價格 (NTD)</th>
+                    <th scope="col">熱量 (kcal)</th>
+                    <th scope="col">糖 (g)</th>
+                    <th scope="col">蛋白質 (g)</th>
+                    <th scope="col">脂肪 (g)</th>
+                </tr>
+                <tr class="odd">
+                    <th scope="row">海鹽焦糖生乳捲<span>(Sea Salt Caramel Roll)</span></th>
+                    <td>$140</td>
+                    <td>320</td>
+                    <td>22</td>
+                    <td>6</td>
+                    <td>20</td>
+                </tr>
+                <tr class="even">
+                    <th scope="row">巴斯克乳酪蛋糕<span>(Basque Cheesecake)</span></th>
+                    <td>$130</td>
+                    <td>380</td>
+                    <td>24</td>
+                    <td>8</td>
+                    <td>28</td>
+                </tr>
+                <tr class="odd"> 
+                    <th scope="row">經典義式提拉米蘇<span>(Classic Tiramisu)</span></th>
+                    <td>$150</td>
+                    <td>450</td>
+                    <td>30</td>
+                    <td>7</td>
+                    <td>32</td>
+                </tr>
+                <tr class="even">
+                    <th scope="row">小山園抹茶千層<span>(Matcha Crepe Cake)</span></th>
+                    <td>$180</td>
+                    <td>360</td>
+                    <td>20</td>
+                    <td>8</td>
+                    <td>22</td>
+                </tr>
+                <tr class="odd">
+                    <th scope="row">法式檸檬塔<span>(Lemon Tart)</span></th>
+                    <td>$120</td>
+                    <td>280</td>
+                    <td>25</td>
+                    <td>4</td>
+                    <td>16</td>
+                </tr>
+                <tr class="even">
+                    <th scope="row">核桃布朗尼<span>(Walnut Brownie)</span></th>
+                    <td>$110</td>
+                    <td>400</td>
+                    <td>35</td>
+                    <td>5</td>
+                    <td>24</td>
+                </tr>
+                <tr class="odd">
+                    <th scope="row">伯爵茶戚風蛋糕<span>(Earl Grey Chiffon)</span></th>
+                    <td>$100</td>
+                    <td>250</td>
+                    <td>18</td>
+                    <td>5</td>
+                    <td>12</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer style="background-color: #616130; color: white; padding: 10px;">© 角落咖啡廳 · Corner of City Café</footer>
+</body>
+</html>
